@@ -1,0 +1,334 @@
+//Header
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  & .logo {
+    display: flex;
+    & img {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  & .nav-menu {
+    margin-left: auto;
+    & ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+
+      & a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  & .inner-icon-mobi {
+    display: none;
+  }
+}
+//End header
+
+// Redefiding
+
+#redefinding {
+  padding: 40px 0;
+  //   border-bottom: 1px solid #bfbfbf;
+  .container {
+    .row {
+      display: flex;
+      align-items: center; // Căn giữa hàng dọc
+      justify-content: space-between; // Chia đều hai phần
+
+      .col-6 {
+        &:first-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; // Căn giữa dòng chữ và hình ảnh
+          gap: 20px; // Khoảng cách giữa chữ và hình
+
+          .inner-text {
+            h1 {
+              font-size: 4rem;
+              line-height: 1.2;
+              font-weight: bold;
+              color: #000; // Màu chữ đen
+              margin: 0;
+            }
+          }
+
+          .inner-image {
+            margin-top: 38px;
+            img {
+              width: 100%; // Hình ảnh chiếm toàn bộ chiều rộng cột
+              border-radius: 20px; // Bo góc
+            }
+          }
+        }
+
+        &:last-child {
+          .machine-image {
+            display: flex;
+            justify-content: right; // Căn giữa hình ảnh trong cột
+            align-items: center;
+
+            img {
+              width: 90%; // Chiếm toàn bộ chiều rộng cột
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .inner-content {
+    display: flex;
+    margin-top: 20px;
+
+    .col-md-6 {
+      display: flex;
+
+      .card {
+        padding: 20px;
+        border-radius: 20px; // Bo góc cho thẻ
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Hiệu ứng bóng mờ
+
+        .badge {
+          text-align: left;
+          width: fit-content;
+          border-radius: 20px;
+          background-color: #fcff76;
+        }
+
+        h5 {
+          display: inline-block;
+          background-color: #ffc107; // Màu nền badge
+          color: #000; // Màu chữ của badge
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 10px; // Bo góc cho badge
+          padding: 5px 10px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-bottom: 20px;
+          color: white;
+        }
+
+        a {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #fff;
+          text-decoration: underline;
+          transition: color 0.3s ease;
+          text-align: right;
+
+          &:hover {
+            color: #ddd; // Màu khi hover vào liên kết
+          }
+        }
+
+        &.bg-primary {
+          background-color: #0046e0; // Nền màu xanh
+        }
+
+        &.bg-dark {
+          background-color: #000; // Nền màu đen
+        }
+      }
+    }
+  }
+}
+
+// End Redefinding
+
+//Segments
+#segments {
+  padding: 40px 0;
+
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .segment-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .first {
+      border-top: 2px solid #526dd1;
+      padding-top: 30px;
+    }
+
+    .col-5 {
+      border-bottom: 2px solid #526dd1;
+      padding-bottom: 20px;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .expand-btn {
+        display: inline-block;
+        background-color: #0046e0;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0032a0;
+        }
+      }
+    }
+
+    .col-7 {
+      .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+//End Segments
+
+//Service
+.services-title {
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+}
+
+#services {
+  background: linear-gradient(to right, #000, #0046e0);
+  color: #fff;
+
+  & .our-popular {
+    color: #000;
+    font-weight: 800;
+  }
+
+  & .bg-vang {
+    background-color: #fcff76;
+    padding: 10px 60px;
+  }
+
+  & .card {
+    border-radius: 20px;
+    overflow: hidden;
+
+    & .card-title {
+      color: #000; /* Màu tiêu đề */
+    }
+
+    & .card-text {
+      color: #6c757d; /* Màu mô tả */
+    }
+  }
+
+  & .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+//End Service
+
+
+#job-insights {
+  background-color: #f8f9fa; /* Màu nền sáng */
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.chart .bar {
+  height: 20px;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.legend {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.legend-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#community {
+  position: relative;
+  background: linear-gradient(to bottom, #000, #0046e0); /* Gradient nền từ đen sang xanh dương */
+  color: white;
+  padding-top: 100px;
+
+
+
+  .container {
+      position: relative;
+      z-index: 2;
+  }
+
+  .header h2 {
+      font-size: 1.8rem;
+  }
+
+  .header p {
+      font-size: 1rem;
+  }
+
+  .card {
+      background-color: white;
+      color: black;
+  }
+
+  .rounded-circle {
+      object-fit: cover;
+  }
+}
